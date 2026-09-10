@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+a = np.array([10, 20, 30, 40])
+b = np.array([2, 4, 5, 8])
+
+print("\nArray A:", a)
+print("Array B:", b)
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
