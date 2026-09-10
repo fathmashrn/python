@@ -1,0 +1,20 @@
+my_list = [10, 20, 30]
+
+old_id = id(my_list)
+
+print("Before modification:")
+print("List:", my_list)
+print("ID:", old_id)
+
+my_list[0] = 99
+
+new_id = id(my_list)
+
+print("\nAfter modification:")
+print("List:", my_list)
+print("ID:", new_id)
+
+if old_id == new_id:
+    print("\nObject identity did not change.")
+else:
+    print("\nObject identity changed.")
