@@ -1,0 +1,21 @@
+import pandas as pd
+import seaborn as sns
+
+df = sns.load_dataset("titanic")
+
+survival_by_class = df.groupby("pclass")["survived"].mean()
+
+print("\nSurvival rate by Pclass:")
+print(survival_by_class)
+
+survival_by_sex = df.groupby("sex")["survived"].mean()
+
+print("\nSurvival rate by Sex:")
+print(survival_by_sex)
+
+grouped = df.groupby(["pclass", "sex"])["survived"].agg(
+    ["mean", "count", "sum"]
+)
+
+print("\nSurvival by Pclass and Sex:")
+print(grouped)
