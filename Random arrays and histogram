@@ -1,0 +1,31 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+uniform_data = np.random.uniform(0, 10, 1000)
+
+normal_data = np.random.normal(0, 1, 1000)
+
+print("\nRandom Uniform Array:")
+print(uniform_data[:10])
+
+print("\nRandom Normal Array:")
+print(normal_data[:10])
+
+# Histogram
+plt.figure(figsize=(10, 4))
+
+plt.subplot(1, 2, 1)
+plt.hist(uniform_data, bins=20, color="skyblue", edgecolor="black")
+plt.title("Uniform Distribution")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+
+plt.subplot(1, 2, 2)
+plt.hist(normal_data, bins=20, color="orange", edgecolor="black")
+plt.title("Normal Distribution")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+
+plt.tight_layout()
+plt.show()
+
