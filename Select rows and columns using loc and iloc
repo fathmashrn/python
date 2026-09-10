@@ -1,0 +1,13 @@
+import pandas as pd
+import seaborn as sns
+
+df = sns.load_dataset("titanic")
+
+print("\nName and Age columns:")
+print(df.loc[:, ["who", "age"]].head())
+
+print("\nFirst 5 rows:")
+print(df.iloc[:5])
+
+print("\nFirst 5 rows and first 3 columns:")
+print(df.iloc[:5, :3])
