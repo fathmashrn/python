@@ -1,0 +1,14 @@
+import pandas as pd
+import seaborn as sns
+
+df = sns.load_dataset("titanic")
+
+age_above_30 = df[df["age"] > 30]
+
+print("\nPassengers with Age > 30:")
+print(age_above_30.head())
+
+female = df[df["sex"] == "female"]
+
+print("\nFemale passengers:")
+print(female.head())
