@@ -1,0 +1,19 @@
+import pandas as pd
+import seaborn as sns
+
+df = sns.load_dataset("titanic")
+
+print("\nDataset Information:")
+df.info()
+
+print("\nStatistical Description:")
+print(df.describe())
+
+print("\nShape of dataset:")
+print(df.shape)
+
+print("\nColumn names:")
+print(df.columns)
+
+print("\nData types:")
+print(df.dtypes)
