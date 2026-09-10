@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+marks = np.array([56, 78, 90, 45, 85])
+
+print("\nMarks:", marks)
+
+print("Mean:", np.mean(marks))
+print("Median:", np.median(marks))
+print("Standard Deviation:", np.std(marks))
+print("Variance:", np.var(marks))
+print("Minimum:", np.min(marks))
+print("Maximum:", np.max(marks))
