@@ -1,0 +1,10 @@
+import pandas as pd
+import seaborn as sns
+
+df = sns.load_dataset("titanic")
+
+print("\nMissing values in each column:")
+print(df.isnull().sum())
+
+print("\nTotal missing values:")
+print(df.isnull().sum().sum())
